@@ -1,0 +1,29 @@
+# Allow all crawlers to index the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sh.tech/Sidama_edu_portal/sitemap.xml
+
+# Disable admin page from search engines (if exists)
+Disallow: /admin.html
+Disallow: /admin/
+
+# Allow all important pages
+Allow: /index.html
+Allow: /zones.html
+Allow: /woreda.html
+Allow: /search.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /help.html
+
+# Allow images
+Allow: /logo.png
+Allow: /registering.jpg
+Allow: /reading.jpg
+Allow: /birhanu.jpg
+Allow: /beyene.jpg
+
+# Allow JSON file
+Allow: /schools.json

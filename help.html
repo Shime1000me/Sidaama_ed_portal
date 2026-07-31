@@ -1,0 +1,123 @@
+<!-- © 2026 Shime1000me. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="copyright" content="Sidama Education Bureau 2026">
+    <title>Help & FAQ - Sidama Education Portal</title>
+    <meta name="description" content="Frequently asked questions and help for school registration in Sidama Region.">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">ENGLISH</button>
+        <button class="lang-btn" data-lang="sid">SIDAAMU AFOO</button>
+        <button class="lang-btn" data-lang="amh">አማርኛ</button>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" data-key="home">HOME</a>
+    <a href="search.html" data-key="search">SEARCH</a>
+    <a href="zones.html" data-key="zones">ZONES</a>
+    <a href="about.html" data-key="about">ABOUT US</a>
+    <a href="contact.html" data-key="contact">CONTACT</a>
+    <a href="help.html" data-key="help">HELP</a>
+    <div class="menu-divider"></div>
+    <div class="menu-langs">
+        <button data-lang="en">🌐 ENGLISH</button>
+        <button data-lang="sid">🌐 SIDAAMU AFOO</button>
+        <button data-lang="amh">🌐 አማርኛ</button>
+    </div>
+</div>
+
+<main>
+    <button class="back-btn" id="backBtn" data-key="back">← BACK</button>
+    <h1 class="page-title" data-key="title">HELP & FAQ</h1>
+    
+    <div class="help-logo">
+        <img src="logo.png" alt="Logo" class="help-logo-img">
+    </div>
+    
+    <div class="faq-section">
+        <h2>❓ <span data-key="faq_title">Frequently Asked Questions</span></h2>
+        
+        <div class="faq-item" id="student-guide">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q1">How do I register my child for school?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a1">Select your zone, then woreda, then choose your school. Click the REGISTER button and fill out the Google Form with your child's information. Upload the payment receipt and previous transcript. You will receive confirmation SMS within 24 hours.</div>
+        </div>
+        
+        <div class="faq-item" id="faq">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q2">What documents do I need to register?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a2">You need: 1) Payment receipt (photo or PDF), 2) Previous year transcript/report card (PDF or photo), 3) Student's personal information (full name, grade, email).</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q3">How do I get my Transaction ID?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a3">Make payment at any bank or using CBE Birr. Your receipt will show a Transaction ID (TXN number). Enter this exactly as shown on your receipt.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q4">What if I don't receive confirmation SMS?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a4">SMS is sent within 24 hours after registration. If you don't receive it, check your spam folder or contact our support team using the information below.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q5">Can I register in multiple schools?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a5">No. Each student can register in only one school. Duplicate registrations will be rejected.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q6">What if my school is not listed?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a6">Contact your school director to ensure they have registered with our system. Schools are being added regularly.</div>
+        </div>
+        
+        <div class="faq-item" id="help-center">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                <span data-key="q7">What should I do if I made a mistake in the form?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer" data-key="a7">Contact your school director immediately. They can help correct the information or reject the registration so you can re-submit.</div>
+        </div>
+    </div>
+    
+    <div class="contact-support">
+        <p>📞 <span data-key="support_text">Still need help?</span></p>
+        <p><span data-key="support_contact">Contact our support team:</span></p>
+        <p><a href="tel:+251962524802">📱 +251-962-524-802</a> | <a href="https://t.me/shimetechsolutions" target="_blank">✉️ registration@sidamaeducation.gov.et</a></p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-logo"><img src="logo.png" alt="Logo" class="footer-logo-img"><h3 data-key="footer_bureau">SIDAMA EDUCATION BUREAU</h3></div>
+    <div class="footer-contact"><p>📍 Hawassa, Sidama Region</p><p>📞 +251962524802</p><p><a href="https://t.me/shimetechsolutions" target="_blank">✉️ info@sidamaeducation.gov.et</a></p></div>
+    <div class="footer-copyright"><p>© 2026 Sidama Education Bureau. All Rights Reserved.</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
