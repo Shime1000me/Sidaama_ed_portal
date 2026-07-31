@@ -1,0 +1,47 @@
+{
+  "_copyright": "© 2026 Shime1000me. All rights reserved.",
+  "schools": [
+    {
+      "id": 1,
+      "name_sid": "FUMA HAYYOOLE ROSU PIROJEKITE",
+      "name_eng": "FUMA HAYOLE EDUCATION PROJECT",
+      "name_amh": "ፉማ ሃዮሌ ትምህርት ፕሮጀክት",
+      "zone": "HAWASSA ZONE",
+      "woreda": "Mehal",
+      "grades": "Grade 9-12",
+      "rating": 5,
+      "form_link_sid": "https://forms.gle/rK7joQkVTiUbVMgB7",
+      "form_link_en": "https://forms.gle/R7ji6C1G4pQv22kF8",
+      "form_link_amh": "https://forms.gle/GSWQnLp1DxxwV5TS7",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name_sid": "TAABOORI LAYINKI DIRIMI ROSI MINE",
+      "name_eng": "TABOR SECONDARY SCHOOL",
+      "name_amh": "ታቦር ሁለተኛ ደረጃ ትምህርት ቤት",
+      "zone": "HAWASSA ZONE",
+      "woreda": "Tabor",
+      "grades": "Grade 9-12",
+      "rating": 4.7,
+      "form_link_sid": "https://forms.gle/NRWrTB2K9YjnEsWP8",
+      "form_link_en": "https://forms.gle/2Nj6TpgqR3NGx8rA8",
+      "form_link_amh": "https://forms.gle/31L5VMoAdffok41w6",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name_sid": "LAKKOTE LAYINKI DIRIMI ROSI MINE",
+      "name_eng": "LEKU SECONDARY SCHOOL",
+      "name_amh": "ለኩ ሁለተኛ ደረጃ ትምህርት ቤት",
+      "zone": "NORTHERN SIDAMA ZONE",
+      "woreda": "Shebedino",
+      "grades": "Grade 9-12",
+      "rating": 4.8,
+      "form_link_sid": "https://forms.gle/qk4cpdLsxk6Fn6jm6",
+      "form_link_en": "https://forms.gle/C5GbqwzFHE1UG9db8",
+      "form_link_amh": "https://forms.gle/9WqNzzcZSZYAVn1K9",
+      "featured": true
+    }
+  ]
+}

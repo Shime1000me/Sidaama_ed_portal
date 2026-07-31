@@ -1,0 +1,180 @@
+<!-- © 2026 Shime1000me. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="copyright" content="Sidama Education Bureau 2026">
+    <title>Sidama Education Portal | Official School Registration</title>
+    <meta name="description" content="Official education registration portal for Sidama Region. Register online in English, Amharic, or Sidaamu Afoo. 500+ schools, 5 zones.">
+    <meta name="keywords" content="Sidama education, school registration, Sidama Region, online registration">
+    <meta name="author" content="Sidama Education Bureau">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sidama Education Portal">
+    <meta property="og:description" content="Official education registration portal for Sidama Region">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">ENGLISH</button>
+        <button class="lang-btn" data-lang="sid">SIDAAMU AFOO</button>
+        <button class="lang-btn" data-lang="amh">አማርኛ</button>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" data-key="home">HOME</a>
+    <a href="search.html" data-key="search">SEARCH</a>
+    <a href="zones.html" data-key="zones">ZONES</a>
+    <a href="about.html" data-key="about">ABOUT US</a>
+    <a href="contact.html" data-key="contact">CONTACT</a>
+    <a href="help.html" data-key="help">HELP</a>
+    <div class="menu-divider"></div>
+    <div class="menu-langs">
+        <button data-lang="en">🌐 ENGLISH</button>
+        <button data-lang="sid">🌐 SIDAAMU AFOO</button>
+        <button data-lang="amh">🌐 አማርኛ</button>
+    </div>
+</div>
+
+<main>
+
+<div class="logo-box">
+    <img src="logo.png" alt="Logo" class="logo-img">
+    <h2 class="bureau-name" data-key="bureau">SIDAMA REGION EDUCATION BUREAU</h2>
+</div>
+
+<div class="hero-box">
+    <img src="registering.jpg" alt="Student registering" class="hero-img">
+    <p class="hero-caption" data-key="hero_caption">5 XIQQEESSI GIDDO BORREESSAMI</p>
+</div>
+
+<div class="welcome-box">
+    <h1 class="region-name" data-key="region">SIDAMA NATIONAL REGIONAL STATE</h1>
+    <p class="welcome-text" data-key="welcome">🎉 Welcome to Sidama Region Education System! 🎊</p>
+    <p class="info-text" data-key="info">💡 Our tools help you register, find schools, and manage your records. Register from home with no queues! 🚫🚶</p>
+</div>
+
+<div class="big-btn-wrap">
+    <button class="big-register" id="bigRegisterBtn" data-key="big_register">🚀 REGISTER NOW</button>
+</div>
+
+<div class="search-wrap">
+    <h3 class="section-title" data-key="search_title">🔍 FIND YOUR SCHOOL</h3>
+    <p class="search-desc" data-key="search_desc">Search 500+ schools across 5 zones. Find registration status, deadlines, and requirements for each school. 📋✅</p>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Hayole, Leku, Tabor..." class="search-input">
+        <button id="searchBtn" class="search-btn" data-key="search_btn">🔍 SEARCH</button>
+    </div>
+</div>
+
+<div class="zones-wrap">
+    <h3 class="section-title" data-key="zones_title">🌍 BROWSE BY ZONE 🌍</h3>
+    <div class="zones-grid" id="zonesGrid"></div>
+</div>
+
+<div class="leaders-wrap">
+    <h3 class="section-title" data-key="leaders_title">💬 MESSAGES FROM LEADERS 💬</h3>
+    <div class="leaders-grid">
+        <div class="leader-card">
+            <img src="birhanu.jpg" alt="Birhanu Nega" class="leader-img">
+            <h4>BIRHANU NEGA</h4>
+            <p class="leader-title" data-key="birhanu_title">Ethiopia Education Minister</p>
+            <p class="quote" data-key="birhanu_quote">"Quality Education for All"</p>
+        </div>
+        <div class="leader-card">
+            <img src="beyene.jpg" alt="Beyene Barasa" class="leader-img">
+            <h4>BEYENE BARASA</h4>
+            <p class="leader-title" data-key="beyene_title">Sidama Education Bureau Head</p>
+            <p class="quote" data-key="beyene_quote">"Education is a powerful tool to change our community"</p>
+        </div>
+    </div>
+</div>
+
+<div class="benefits-wrap">
+    <h3 class="section-title" data-key="benefits_title">❓ WHY REGISTER WITH US? ❓</h3>
+    <div class="benefits-grid">
+        <div class="benefit-card"><div class="benefit-icon">⚡</div><h4 data-key="benefit1_title">FAST REGISTRATION</h4><p data-key="benefit1_desc">Register in 5 minutes</p></div>
+        <div class="benefit-card"><div class="benefit-icon">📱</div><h4 data-key="benefit2_title">MOBILE FRIENDLY</h4><p data-key="benefit2_desc">Works on any phone</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🏆</div><h4 data-key="benefit3_title">OFFICIALLY APPROVED</h4><p data-key="benefit3_desc">Approved by Sidama Education Bureau</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🏠</div><h4 data-key="benefit4_title">REGISTER FROM HOME</h4><p data-key="benefit4_desc">No queues! 🚫🚶</p></div>
+    </div>
+</div>
+
+<div class="stats-wrap">
+    <h3 class="section-title" data-key="stats_title">📊 SIDAMA EDUCATION BY NUMBERS 📊</h3>
+    <div class="stats-grid">
+        <div class="stat-card"><div class="stat-number">500+</div><div class="stat-label" data-key="stat_schools">SCHOOLS</div></div>
+        <div class="stat-card"><div class="stat-number">50+</div><div class="stat-label" data-key="stat_woredas">WOREDAS</div></div>
+        <div class="stat-card"><div class="stat-number">15,000+</div><div class="stat-label" data-key="stat_students">STUDENTS REGISTERED</div></div>
+        <div class="stat-card"><div class="stat-number">5</div><div class="stat-label" data-key="stat_zones">ZONES</div></div>
+    </div>
+</div>
+
+<div class="featured-wrap">
+    <h3 class="section-title" data-key="featured_title">⭐ FEATURED SCHOOLS ⭐</h3>
+    <div class="schools-grid" id="featuredSchoolsGrid"></div>
+</div>
+
+<div class="reading-wrap">
+    <img src="reading.jpg" alt="Students reading" class="reading-img">
+    <p class="reading-caption" data-key="reading_caption">I MISS MY SCHOOL LIFE</p>
+</div>
+
+<div class="howit-wrap">
+    <h3 class="section-title" data-key="how_title">📖 HOW TO REGISTER? 📖</h3>
+    <div class="steps-grid">
+        <div class="step-card"><div class="step-num">1️⃣</div><div class="step-title" data-key="step1_title">STEP 1</div><div class="step-desc" data-key="step1_desc">CHOOSE SCHOOL</div><div class="step-detail" data-key="step1_detail">Select zone or search</div></div>
+        <div class="step-card"><div class="step-num">2️⃣</div><div class="step-title" data-key="step2_title">STEP 2</div><div class="step-desc" data-key="step2_desc">FILL FORM</div><div class="step-detail" data-key="step2_detail">Name, Grade, Transaction ID</div></div>
+        <div class="step-card"><div class="step-num">3️⃣</div><div class="step-title" data-key="step3_title">STEP 3</div><div class="step-desc" data-key="step3_desc">UPLOAD DOCS</div><div class="step-detail" data-key="step3_detail">Receipt and Transcript</div></div>
+        <div class="step-card"><div class="step-num">4️⃣</div><div class="step-title" data-key="step4_title">STEP 4</div><div class="step-desc" data-key="step4_desc">GET CONFIRMATION</div><div class="step-detail" data-key="step4_detail">SMS within 24 hours</div></div>
+    </div>
+</div>
+
+<div class="cta-wrap">
+    <div class="cta-text" data-key="cta_text">🎯 REGISTER TODAY, START YOUR EDUCATION TOMORROW! 🎯</div>
+    <button class="big-register" id="bigRegisterBtnBottom" data-key="big_register">🚀 REGISTER NOW</button>
+</div>
+
+</main>
+
+<footer>
+    <div class="footer-logo"><img src="logo.png" alt="Logo" class="footer-logo-img"><h3 data-key="footer_bureau">SIDAMA EDUCATION BUREAU</h3></div>
+    <div class="footer-contact"><p>📍 Hawassa, Sidama Region</p><p>📞 +251962524802</p><p><a href="https://t.me/shimetechsolutions" target="_blank">✉️ info@sidamaeducation.gov.et</a></p></div>
+    <div class="footer-social"><p data-key="follow_us">🤝 FOLLOW US:</p><div class="social-icons"><span class="social-link" data-message="Telegram is recommended!">📘 Facebook</span><a href="https://t.me/shimetechsolutions" target="_blank" style="color:white; text-decoration:none;">📘 Telegram</a><span class="social-link" data-message="Telegram is recommended!">📘 Twitter</span></div></div>
+    <div class="footer-resources"><p data-key="resources">📚 RESOURCES:</p><ul><li><a href="help.html#student-guide" data-key="student_guide">Student Guide</a></li><li><a href="help.html#faq" data-key="faq">FAQ</a></li><li><a href="help.html#help-center" data-key="help_center">Help Center</a></li><li><a href="help.html" data-key="help">HELP</a></li></ul></div>
+    <div class="footer-copyright"><p>© 2026 Sidama Education Bureau. All Rights Reserved.</p></div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('✅ index.html loaded');
+        
+        var savedLang = localStorage.getItem('preferredLang') || 'en';
+        if (typeof setLanguage === 'function') {
+            setLanguage(savedLang);
+        }
+        
+        if (typeof loadSchools === 'function') {
+            loadSchools();
+        }
+        if (typeof loadZones === 'function') {
+            loadZones();
+        }
+        if (typeof loadFeaturedSchools === 'function') {
+            loadFeaturedSchools();
+        }
+        
+        console.log('✅ index.html ready!');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- © 2026 Shime1000me. All rights reserved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="copyright" content="Sidama Education Bureau 2026">
+    <title>About Us - Sidama Education Portal</title>
+    <meta name="description" content="About Sidama Education Bureau. Our mission, vision, and values.">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">ENGLISH</button>
+        <button class="lang-btn" data-lang="sid">SIDAAMU AFOO</button>
+        <button class="lang-btn" data-lang="amh">አማርኛ</button>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" data-key="home">HOME</a>
+    <a href="search.html" data-key="search">SEARCH</a>
+    <a href="zones.html" data-key="zones">ZONES</a>
+    <a href="about.html" data-key="about">ABOUT US</a>
+    <a href="contact.html" data-key="contact">CONTACT</a>
+    <a href="help.html" data-key="help">HELP</a>
+    <div class="menu-divider"></div>
+    <div class="menu-langs">
+        <button data-lang="en">🌐 ENGLISH</button>
+        <button data-lang="sid">🌐 SIDAAMU AFOO</button>
+        <button data-lang="amh">🌐 አማርኛ</button>
+    </div>
+</div>
+
+<main>
+    <button class="back-btn" id="backBtn" data-key="back">← BACK</button>
+    <h1 class="page-title" data-key="title">ABOUT US</h1>
+    
+    <div class="about-logo">
+        <img src="logo.png" alt="Logo" class="about-logo-img">
+    </div>
+    
+    <div class="about-section">
+        <h2 data-key="who_title">Who We Are</h2>
+        <p data-key="who_text">The Sidama Education Bureau is the official government body responsible for overseeing education in Sidama Region. We manage over 500 schools across 5 zones, serving more than 15,000 students.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2 data-key="mission_title">Our Mission</h2>
+        <p data-key="mission_text">To provide quality education for all students in Sidama Region through accessible registration systems, efficient school management, and continuous improvement of educational services.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2 data-key="vision_title">Our Vision</h2>
+        <p data-key="vision_text">To become a model education system in Ethiopia, where every student has access to quality education and seamless registration services.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2 data-key="values_title">Our Core Values</h2>
+        <ul class="values-list">
+            <li><strong data-key="value1_title">Accessibility:</strong> <span data-key="value1_text">Education for all, regardless of location or background</span></li>
+            <li><strong data-key="value2_title">Transparency:</strong> <span data-key="value2_text">Open and honest registration process</span></li>
+            <li><strong data-key="value3_title">Efficiency:</strong> <span data-key="value3_text">Fast and reliable service delivery</span></li>
+            <li><strong data-key="value4_title">Innovation:</strong> <span data-key="value4_text">Embracing technology to improve education</span></li>
+            <li><strong data-key="value5_title">Community:</strong> <span data-key="value5_text">Working together for Sidama's future</span></li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-logo"><img src="logo.png" alt="Logo" class="footer-logo-img"><h3 data-key="footer_bureau">SIDAMA EDUCATION BUREAU</h3></div>
+    <div class="footer-contact"><p>📍 Hawassa, Sidama Region</p><p>📞 +251962524802</p><p><a href="https://t.me/shimetechsolutions" target="_blank">✉️ info@sidamaeducation.gov.et</a></p></div>
+    <div class="footer-copyright"><p>© 2026 Sidama Education Bureau. All Rights Reserved.</p></div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('✅ about.html loaded');
+        
+        var savedLang = localStorage.getItem('preferredLang') || 'en';
+        if (typeof setLanguage === 'function') {
+            setLanguage(savedLang);
+        }
+        
+        console.log('✅ about.html ready!');
+    });
+</script>
+</body>
+</html>
