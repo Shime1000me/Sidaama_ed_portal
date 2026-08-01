@@ -50,21 +50,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ zones.html loaded');
-        
-        var savedLang = localStorage.getItem('preferredLang') || 'en';
-        if (typeof setLanguage === 'function') {
-            setLanguage(savedLang);
-        }
-        
-        if (typeof loadZones === 'function') {
-            loadZones();
-        }
-        
-        console.log('✅ zones.html ready!');
-    });
-</script>
 </body>
 </html>
