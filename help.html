@@ -119,33 +119,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ help.html loaded');
-        
-        var savedLang = localStorage.getItem('preferredLang') || 'en';
-        if (typeof setLanguage === 'function') {
-            setLanguage(savedLang);
-        }
-        
-        // Handle hash links from footer (FAQ anchors)
-        if (window.location.hash) {
-            var target = document.querySelector(window.location.hash);
-            if (target) {
-                var question = target.querySelector('.faq-question');
-                if (question) {
-                    setTimeout(function() {
-                        question.classList.add('active');
-                        var answer = question.nextElementSibling;
-                        if (answer) answer.classList.add('show');
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }, 300);
-                }
-            }
-        }
-        
-        console.log('✅ help.html ready!');
-    });
-</script>
 </body>
-</html>
+                </html>
