@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="copyright" content="Sidama Education Bureau 2026">
-    <title>Search Results - Sidama Education Portal</title>
-    <meta name="description" content="Search results for schools in Sidama Region.">
+    <title>Woreda - Sidama Education Portal</title>
+    <meta name="description" content="Select your woreda to find schools in Sidama Region.">
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,9 +39,16 @@
 
 <main>
     <button class="back-btn" id="backBtn" data-key="back">← BACK</button>
-    <div class="search-query" id="searchQuery"></div>
-    <div class="results-count" id="resultsCount"></div>
-    <div class="schools-grid" id="resultsGrid"></div>
+    <h1 class="page-title" id="zoneTitle">Loading...</h1>
+    <div class="zone-info" id="zoneInfo"></div>
+    
+    <div class="woredas-grid" id="woredasGrid"></div>
+    
+    <div class="schools-section" id="schoolsSection" style="display: none;">
+        <h3 id="schoolsTitle">Schools in </h3>
+        <div class="schools-grid" id="schoolsGrid"></div>
+        <div class="more-schools-message" id="moreSchoolsMessage" style="display: none;"></div>
+    </div>
 </main>
 
 <footer>
@@ -51,32 +58,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ search.html loaded');
-        
-        var savedLang = localStorage.getItem('preferredLang') || 'en';
-        if (typeof setLanguage === 'function') {
-            setLanguage(savedLang);
-        }
-        
-        var urlParams = new URLSearchParams(window.location.search);
-        var query = urlParams.get('q') || '';
-        
-        var queryDisplay = document.getElementById('searchQuery');
-        if (queryDisplay) {
-            queryDisplay.innerHTML = '🔍 Search Results: "' + query + '"';
-        }
-        
-        if (typeof loadSchools === 'function') {
-            loadSchools();
-        }
-        if (typeof displayResults === 'function') {
-            displayResults();
-        }
-        
-        console.log('✅ search.html ready!');
-    });
-</script>
 </body>
-</html>
+        </html>
