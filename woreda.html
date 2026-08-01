@@ -58,38 +58,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ woreda.html loaded');
-        
-        // Set language
-        var savedLang = localStorage.getItem('preferredLang') || 'en';
-        if (typeof setLanguage === 'function') {
-            setLanguage(savedLang);
-        }
-        
-        // Get zone from URL
-        var urlParams = new URLSearchParams(window.location.search);
-        var zoneKey = urlParams.get('zoneKey');
-        var zoneParam = urlParams.get('zone');
-        
-        console.log('Zone Key:', zoneKey);
-        console.log('Zone Param:', zoneParam);
-        
-        // Load schools first
-        if (typeof loadSchools === 'function') {
-            loadSchools();
-        }
-        
-        // Load woredas for this zone
-        if (zoneKey && typeof loadWoredasByZone === 'function') {
-            loadWoredasByZone(zoneKey);
-        } else if (typeof loadWoredas === 'function') {
-            loadWoredas();
-        }
-        
-        console.log('✅ woreda.html ready!');
-    });
-</script>
 </body>
 </html>
