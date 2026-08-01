@@ -154,27 +154,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('✅ index.html loaded');
-        
-        var savedLang = localStorage.getItem('preferredLang') || 'en';
-        if (typeof setLanguage === 'function') {
-            setLanguage(savedLang);
-        }
-        
-        if (typeof loadSchools === 'function') {
-            loadSchools();
-        }
-        if (typeof loadZones === 'function') {
-            loadZones();
-        }
-        if (typeof loadFeaturedSchools === 'function') {
-            loadFeaturedSchools();
-        }
-        
-        console.log('✅ index.html ready!');
-    });
-</script>
 </body>
-</html>
+        </html>
