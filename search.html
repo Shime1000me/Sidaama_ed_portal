@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="copyright" content="Sidama Education Bureau 2026">
-    <title>Woreda - Sidama Education Portal</title>
-    <meta name="description" content="Select your woreda to find schools in Sidama Region.">
+    <title>Search Results - Sidama Education Portal</title>
+    <meta name="description" content="Search results for schools in Sidama Region.">
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,16 +39,10 @@
 
 <main>
     <button class="back-btn" id="backBtn" data-key="back">← BACK</button>
-    <h1 class="page-title" id="zoneTitle">Loading...</h1>
-    <div class="zone-info" id="zoneInfo"></div>
-    
-    <div class="woredas-grid" id="woredasGrid"></div>
-    
-    <div class="schools-section" id="schoolsSection" style="display: none;">
-        <h3 id="schoolsTitle">Schools in </h3>
-        <div class="schools-grid" id="schoolsGrid"></div>
-        <div class="more-schools-message" id="moreSchoolsMessage" style="display: none;"></div>
-    </div>
+    <h1 class="page-title" data-key="search_title">🔍 SEARCH RESULTS</h1>
+    <div class="search-query" id="searchQuery"></div>
+    <div class="results-count" id="resultsCount"></div>
+    <div class="schools-grid" id="resultsGrid"></div>
 </main>
 
 <footer>
@@ -59,4 +53,4 @@
 
 <script src="main.js"></script>
 </body>
-        </html>
+</html>
