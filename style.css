@@ -4,7 +4,7 @@
    ALL STYLES FROM ALL PAGES
    ========================================== */
 
-/* 1. RESET & BASE */
+/* RESET & BASE */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     line-height: 1.5;
 }
 
-/* 2. TOP BAR */
+/* TOP BAR */
 .top-bar {
     background: #0b4f37;
     padding: 12px 16px;
@@ -60,7 +60,7 @@ body {
     font-weight: bold;
 }
 
-/* 3. MOBILE MENU */
+/* MOBILE MENU */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -112,14 +112,14 @@ body {
     cursor: pointer;
 }
 
-/* 4. MAIN CONTENT */
+/* MAIN */
 main {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px 16px 40px;
 }
 
-/* 5. BACK BUTTON */
+/* BACK BUTTON */
 .back-btn {
     background: none;
     border: none;
@@ -132,15 +132,15 @@ main {
     gap: 5px;
 }
 
-/* 6. PAGE TITLE */
+/* PAGE TITLE */
 .page-title {
-    font-size: 24px;
+    font-size: 28px;
     color: #0b4f37;
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* 7. ZONES */
+/* ZONES */
 .zones-grid {
     display: flex;
     flex-direction: column;
@@ -193,7 +193,7 @@ main {
     font-size: 12px;
 }
 
-/* 8. WOREDA */
+/* WOREDA */
 .woredas-grid {
     display: flex;
     flex-direction: column;
@@ -235,7 +235,7 @@ main {
     border-bottom: 1px solid #eee;
 }
 
-/* 9. SCHOOLS */
+/* SCHOOLS */
 .schools-section {
     margin-top: 24px;
     padding-top: 20px;
@@ -333,7 +333,7 @@ main {
     color: #666;
 }
 
-/* 10. INDEX PAGE SPECIFIC */
+/* INDEX PAGE */
 .logo-box {
     text-align: center;
     margin-bottom: 20px;
@@ -628,7 +628,7 @@ main {
     margin-bottom: 12px;
 }
 
-/* 11. ABOUT PAGE */
+/* ABOUT PAGE */
 .about-logo {
     text-align: center;
     margin-bottom: 24px;
@@ -680,7 +680,7 @@ main {
     color: #0b4f37;
 }
 
-/* 12. CONTACT PAGE */
+/* CONTACT PAGE */
 .contact-logo {
     text-align: center;
     margin-bottom: 24px;
@@ -756,7 +756,7 @@ main {
     font-size: 14px;
 }
 
-/* 13. HELP/FAQ PAGE */
+/* HELP/FAQ PAGE */
 .help-logo {
     text-align: center;
     margin-bottom: 24px;
@@ -848,7 +848,7 @@ main {
     font-weight: bold;
 }
 
-/* 14. SEARCH PAGE */
+/* SEARCH PAGE */
 .search-query {
     font-size: 14px;
     color: #666;
@@ -865,7 +865,7 @@ main {
     color: #0b4f37;
 }
 
-/* 15. FOOTER */
+/* FOOTER */
 footer {
     background: #0b4f37;
     color: white;
@@ -923,7 +923,7 @@ footer {
     opacity: 0.7;
 }
 
-/* 16. RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 480px) {
     .benefits-grid {
         grid-template-columns: 1fr 1fr;
@@ -946,4 +946,4 @@ footer {
         font-size: 10px;
         padding: 4px 8px;
     }
-}
+   }
